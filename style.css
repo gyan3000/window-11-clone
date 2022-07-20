@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: url('bg.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: 5%;
+    padding: 5px;
+    color:white;
+    text-align: center;
+}
+.icon:hover{
+     border: 2px  #d4e3fa;
+     background-color: #d4e3fa24;
+}
+.icon img{
+    margin-left: 4px;
+    height: 35px;
+    width: 70px;
+}
+
+
+
+.task-bar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #d4e3fa;
+    z-index: 500;
+}
+.task-bar img:nth-child(1){
+    width: 280px;
+    height: 40px;
+}
+
+#right {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 98%;
+    background:#d4e3fa ;
+}
+
+#start-menu {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+#start-menu img {
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+#right-upper{
+    position: absolute;
+    right: 10px;
+    bottom: -100%;  
+    transition: all 1s ease-in-out;
+}
+#right-upper img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
